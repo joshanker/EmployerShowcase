@@ -22,3 +22,34 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+.logo {
+    max-height: 100px;
+}
+
+.EmployerTiles {
+    display: inline-block;
+    max-width: 45%;
+    min-width: 45%;
+    text-align: center;
+    /*border: solid;*/
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding-bottom: 2px;
+    background-color: ghostwhite;
+}
+
+
+.detaillogo {
+    display: block;
+    text-align: center;
+    max-height: 200px;
+    min-width: 100%;
+    border:solid;
+}
+
+.detailimg {
+    max-height: 200px;
+    object-fit: contain;
+}

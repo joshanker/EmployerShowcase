@@ -1,0 +1,33 @@
+﻿@using EmployerShowcases.Models
+@model Employer
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<p>
+    <div class="detaillogo"><img class="detailimg" src="@Url.Content("~/Content/img/" + Model.ImageName)" /></div>
+</p>
+
+<div>@Model.ID</div>
+<div>@Model.Date</div>
+<p>@Model.Name </p>
+<div>@Model.Salary </div>
+<div>@Model.Hourly </div>
+<div>@Model.Signing_bonus </div>
+<div>@Model.Address </div>
+<div>@Model.City </div>
+<div>@Model.Has_current_openings </div>
+<div>@Model.Perks </div>
+<div>@Model.Tuition_reimbursement </div>
+<div>@Model.Name1 </div>
+<div>@Model.Name2 </div>
+<div>@Model.Name3 </div>
+<div>@Model.Name4 </div>
+<div>@Model.Name5 </div>
+<div>@Model.ImageName</div>
+<div>@Model.Notes </div>
+
+

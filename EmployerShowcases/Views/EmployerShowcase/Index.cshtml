@@ -1,0 +1,23 @@
+﻿@using EmployerShowcases.Models
+@model List<Employer>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br /><br />
+@foreach (var item in Model)
+{
+    <div class="EmployerTiles">
+        
+    <div>@item.Name</div>
+    <div>@item.Date</div>
+        <a href="@Url.Action("Detail", "EmployerShowcase", new { id = item.ID })">     <div><img class="logo" src="@Url.Content("~/Content/img/" + item.ImageName)" /></div></a>
+
+    </div>
+
+}
+
+
+
+@*<span><a href="@Url.Action("Detail", "EmployerShowcase", new { id = item.ID })"><img class="logo" src="@Url.Content("~/Content/img/" + item.ImageName)" /></a></span>*@
