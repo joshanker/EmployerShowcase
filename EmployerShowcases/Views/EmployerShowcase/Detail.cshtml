@@ -10,24 +10,21 @@
 <p>
     <div class="detaillogo"><img class="detailimg" src="@Url.Content("~/Content/img/" + Model.ImageName)" /></div>
 </p>
-
-<div>@Model.ID</div>
-<div>@Model.Date</div>
-<p>@Model.Name </p>
-<div>@Model.Salary </div>
-<div>@Model.Hourly </div>
-<div>@Model.Signing_bonus </div>
-<div>@Model.Address </div>
-<div>@Model.City </div>
-<div>@Model.Has_current_openings </div>
-<div>@Model.Perks </div>
-<div>@Model.Tuition_reimbursement </div>
-<div>@Model.Name1 </div>
-<div>@Model.Name2 </div>
-<div>@Model.Name3 </div>
-<div>@Model.Name4 </div>
-<div>@Model.Name5 </div>
-<div>@Model.ImageName</div>
-<div>@Model.Notes </div>
-
-
+<table>
+    <tr><td><span class="detaillabel">Company Name:</span></td><td><span> @Model.Name </span></td></tr>
+    <tr><td><span class="detaillabel">Date of Visit:</span></td><td><span> @Model.Date.ToString("MM/dd/yyyy")</span></td></tr>
+    <tr><td><span class="detaillabel">Salary:</span></td><td><span> @Model.Salary.ToString("C")</span></td></tr>
+    <tr><td><span class="detaillabel">Is the pay hourly?</span></td><td><span> @Model.Hourly </span></td></tr>
+    <tr><td><span class="detaillabel">Signing bonus:</span></td><td><span> @Model.Signing_bonus </span></td></tr>
+    <tr><td><span class="detaillabel">Address:</span></td><td><span>@Model.Address </span></td></tr>
+    <tr><td><span class="detaillabel">City:</span></td><td><div>@Model.City </div></td></tr>
+    <tr><td><span class="detaillabel">Has openings?</span></td><td><span>@Model.Has_current_openings </span></td></tr>
+    <tr><td><span class="detaillabel">Perks:</span></td><td><span class="detailnugget">@Model.Perks </span></td></tr>
+    <tr><td><span class="detaillabel">Tuition Reimbursement:</span></td><td><span>@Model.Tuition_reimbursement </span></td></tr>
+    <tr><td><span class="detaillabel">Name 1:</span></td><td><span>@Model.Name1 </span></td></tr>
+    <tr><td><span class="detaillabel">Name 2:</span></td><td><span>@Model.Name2 </span></td></tr>
+    <tr><td><span class="detaillabel">Name 3:</span></td><td><span>@Model.Name3 </span></td></tr>
+    <tr><td><span class="detaillabel">Name 4:</span></td><td><span>@Model.Name4 </span></td></tr>
+    <tr><td><span class="detaillabel">Name 5:</span></td><td><span>@Model.Name5 </span></td></tr>
+    <tr><td><span class="detaillabel">Notes:</span></td><td><span>@Model.Notes </span></td></tr>
+</table>

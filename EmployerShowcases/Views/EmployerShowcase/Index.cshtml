@@ -11,7 +11,7 @@
     <div class="EmployerTiles">
         
     <div>@item.Name</div>
-    <div>@item.Date</div>
+    <div>@item.Date.ToString("MM/dd/yyyy")</div>
         <a href="@Url.Action("Detail", "EmployerShowcase", new { id = item.ID })">     <div><img class="logo" src="@Url.Content("~/Content/img/" + item.ImageName)" /></div></a>
 
     </div>

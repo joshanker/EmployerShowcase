@@ -33,7 +33,7 @@ namespace EmployerShowcases.DAL
                         e.ID = Convert.ToInt32(reader["ID"]);
                         e.Date = Convert.ToDateTime(reader["Date"]);
                         e.Name = Convert.ToString(reader["name"]);
-                        e.Salary = Convert.ToString(reader["salary"]);
+                        e.Salary = Convert.ToDecimal(reader["salary"]);
                         e.Hourly = Convert.ToString(reader["hourly"]);
                         e.Signing_bonus = Convert.ToString(reader["signing_bonus"]);
                         e.Address = Convert.ToString(reader["address"]);

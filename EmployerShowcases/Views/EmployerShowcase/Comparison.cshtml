@@ -6,36 +6,29 @@
 }
 
 
-<p><h2>Employer Comaprisons:</h2></p>
-
+<h2>Employer Comaprisons:</h2>
+<hr />
 @foreach (var item in Model)
 {
-    <p>
-
-
-
-    <p>
-        <h3>
-            @item.Name
-            <span>@item.ID</span>
-            <span>@item.Date</span>
-        </h3>
-    </p>
-    <span>@item.Salary </span>
-    <span>@item.Hourly </span>
-    <span>@item.Signing_bonus </span>
-    <span>@item.Address </span>
-    <span>@item.City </span>
-    <span>@item.Has_current_openings </span>
-    <span>@item.Perks </span>
-    <span>@item.Tuition_reimbursement </span>
-    <span>@item.Name1 </span>
-    <span>@item.Name2 </span>
-    <span>@item.Name3 </span>
-    <span>@item.Name4 </span>
-    <span>@item.Name5 </span>
-    <span>@item.ImageName</span>
-    <span>@item.Notes </span>
-    </p>
+    <span class="comparisondiv">
+        <span class="compname">@item.Name</span>
+        <span>@item.Date.ToString("MM/dd/yyyy")</span>
+        <span>@item.Salary.ToString("C") </span>
+        <span>@item.Hourly </span>
+        <span>@item.Signing_bonus </span>
+        <span>@item.Address </span>
+        <span>@item.City </span>
+        <span>@item.Has_current_openings </span>
+        <span>@item.Perks </span>
+        <span>@item.Tuition_reimbursement </span>
+        <span>@item.Name1 </span>
+        <span>@item.Name2 </span>
+        <span>@item.Name3 </span>
+        <span>@item.Name4 </span>
+        <span>@item.Name5 </span>
+        <span>@item.Notes </span>
+    </span>
 
 }
+
+

@@ -10,7 +10,7 @@ namespace EmployerShowcases.Models
         public int ID { get; set; }
         public DateTime Date { get; set; }
         public string Name { get; set; }
-        public string Salary { get; set; }
+        public Decimal Salary { get; set; }
         public string Hourly { get; set; }
         public string Signing_bonus { get; set; }
         public string Address { get; set; }
