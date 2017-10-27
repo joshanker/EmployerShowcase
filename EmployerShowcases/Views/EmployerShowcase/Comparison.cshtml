@@ -8,26 +8,33 @@
 
 <h2>Employer Comaprisons:</h2>
 <hr />
+
+
 @foreach (var item in Model)
 {
-    <span class="comparisondiv">
-        <span class="compname">@item.Name</span>
-        <span>@item.Date.ToString("MM/dd/yyyy")</span>
-        <span>@item.Salary.ToString("C") </span>
-        <span>@item.Hourly </span>
-        <span>@item.Signing_bonus </span>
-        <span>@item.Address </span>
-        <span>@item.City </span>
-        <span>@item.Has_current_openings </span>
-        <span>@item.Perks </span>
-        <span>@item.Tuition_reimbursement </span>
-        <span>@item.Name1 </span>
-        <span>@item.Name2 </span>
-        <span>@item.Name3 </span>
-        <span>@item.Name4 </span>
-        <span>@item.Name5 </span>
-        <span>@item.Notes </span>
-    </span>
+    <div class="comparison">
+
+        <Table class="table-comp" border="1">
+            <tr>
+                <td class="px100">@item.Name</td>     
+                <td class="px75">@item.Date.ToString("MM/dd/yyyy")</td>       
+                <td class="px100">@item.Salary.ToString("C")</td>       
+                <td class="px50">@item.Hourly</td>       
+                <td class="px75">@item.Signing_bonus</td>       
+                <td class="px150">@item.Address</td>       
+                <td class="px100">@item.City</td>       
+                <td class="px100">@item.Has_current_openings</td>       
+                <td class="px900">@item.Perks</td>       
+                <td class="px100">@item.Tuition_reimbursement</td>       
+                <td class="px100">@item.Name1</td>       
+                <td class="px100">@item.Name2</td>       
+                <td class="px100">@item.Name3</td>       
+                <td class="px100">@item.Name4</td>       
+                <td class="px100">@item.Name5</td>       
+                <td class="px100">@item.Notes</td>
+            </tr>
+        </Table>
+    </div>
 
 }
 

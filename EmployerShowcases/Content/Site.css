@@ -63,16 +63,54 @@ textarea {
 }
 
 .detailnugget {
-    /*border:solid;*/
+
     
 }
 
-.comparisondiv {
-    display: inline-block;
-    border:solid;
-    vertical-align:top;
-    max-width:20%
+
+
+
+
+.comparison { 
+
 }
-.compname {
-    text-align:center;
+
+.table-comp {
+
+    table-layout:fixed;
+    width:100%;
+}
+
+td {
+
+}
+
+.px50 {
+    width: 50px;
+}
+
+.px75 {
+    width: 75px;
+}
+
+
+.px100 {
+    width: 100px;
+}
+.px150 {
+    width: 150px;
+}
+.px200 {
+    width: 200px;
+}
+.px250 {
+    width: 250px;
+}
+
+.px300 {
+    width: 300px;
+}
+
+.px900 {
+    width:900px;
 }
