@@ -9,33 +9,49 @@
 <h2>Employer Comaprisons:</h2>
 <hr />
 
+<Table class="table-comp" border="1">
+    <tr>
+        <th class="px100"><span>Name</span></th>
+        <th class="px75"><span>Date</span></th>
+        <th class="px100"><span>Salary</span></th>
+        <th class="px50"><span>Hourly</span></th>
+        <th class="px75"><span>Signing bonus</span></th>
+        <th class="px150"><span>Address</span></th>
+        <th class="px100"><span>City</span></th>
+        <th class="px200"><span>Has current openings</span></th>
+        <th class="px900"><span>Perks</span></th>
+        <th class="px100"><span>Tuition_reimbursement</span></th>
+        <th class="px100"><span>Name1</span></th>
+        <th class="px100"><span>Name2</span></th>
+        <th class="px100"><span>Name3</span></th>
+        <th class="px100"><span>Name4</span></th>
+        <th class="px100"><span>Name5</span></th>
+        <th class="px100"><span>Notes</span></th>
+    </tr>
 
-@foreach (var item in Model)
-{
-    <div class="comparison">
+    @foreach (var item in Model)
+    {
+        
+        <tr>
+            <td class="px100">@item.Name</td>
+            <td class="px75">@item.Date.ToString("MM/dd/yyyy")</td>
+            <td class="px100">@item.Salary.ToString("C")</td>
+            <td class="px50">@item.Hourly</td>
+            <td class="px75">@item.Signing_bonus</td>
+            <td class="px150">@item.Address</td>
+            <td class="px100">@item.City</td>
+            <td class="px200">@item.Has_current_openings</td>
+            <td class="px900">@item.Perks</td>
+            <td class="px100">@item.Tuition_reimbursement</td>
+            <td class="px100">@item.Name1</td>
+            <td class="px100">@item.Name2</td>
+            <td class="px100">@item.Name3</td>
+            <td class="px100">@item.Name4</td>
+            <td class="px100">@item.Name5</td>
+            <td class="px100">@item.Notes</td>
+        </tr>
+        
+    }
 
-        <Table class="table-comp" border="1">
-            <tr>
-                <td class="px100">@item.Name</td>     
-                <td class="px75">@item.Date.ToString("MM/dd/yyyy")</td>       
-                <td class="px100">@item.Salary.ToString("C")</td>       
-                <td class="px50">@item.Hourly</td>       
-                <td class="px75">@item.Signing_bonus</td>       
-                <td class="px150">@item.Address</td>       
-                <td class="px100">@item.City</td>       
-                <td class="px100">@item.Has_current_openings</td>       
-                <td class="px900">@item.Perks</td>       
-                <td class="px100">@item.Tuition_reimbursement</td>       
-                <td class="px100">@item.Name1</td>       
-                <td class="px100">@item.Name2</td>       
-                <td class="px100">@item.Name3</td>       
-                <td class="px100">@item.Name4</td>       
-                <td class="px100">@item.Name5</td>       
-                <td class="px100">@item.Notes</td>
-            </tr>
-        </Table>
-    </div>
-
-}
-
+</Table>
 
