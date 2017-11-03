@@ -7,6 +7,8 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    /*border:solid;*/
+    
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -68,9 +70,6 @@ textarea {
 }
 
 
-
-
-
 .comparison { 
 
 }
@@ -79,6 +78,10 @@ textarea {
 
     table-layout:fixed;
     width:100%;
+}
+
+.comptable {
+    text-align:left;
 }
 
 td {
